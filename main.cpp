@@ -1,7 +1,6 @@
 #include <iostream>
 
 /* Weight Equations Formulas Calculator
-
     1. Solve for weight in kilogram
     2. Solve for mass in Newton
     3. Solve for acceleration of gravity W/m
@@ -18,8 +17,8 @@ double solveAG (double &,double &);
 
 int main()
 {
-    double vObjWeight;
-    double vObjMass;
+    double vObjWeight = 34.3233;
+    double vObjMass = 3.5;
     double resultSolveFW;
     resultSolveFW = solveFW();
     cout <<"Weight(f) "<< resultSolveFW <<" newton\n" <<endl;
@@ -36,7 +35,7 @@ int main()
 //Function using local variable
 double solveFW()
 {
-    double objWeight,objMass;
+    double objWeight,objMass = 3.5;
     cout << "What is the object mass in kilogram ?"<<endl;
     cin >> objMass;
     return objWeight = objMass * GRAVITY ;
@@ -62,6 +61,3 @@ double solveAG(double &objWeight,double &objMass)
     double g = 0.0;
     return g = objWeight / objMass;
 }
-
-
-
